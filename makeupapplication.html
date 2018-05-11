@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<title>Makeup Application</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<link rel="icon" href="imgs/favicon.ico">
+	
+	<style>
+      * {
+        font-family: "Dosis", san-serif;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        margin: auto;
+        text-align: center;
+	       }
+      h2 {
+        font-family: "Dancing Script";
+        }
+     
+        body { 
+        background: linear-gradient(to bottom, #990033 0%, #000000 103%);        
+        color: white;
+        font-family: sans-serif;
+        margin: auto;
+        font-size: 1.25em;
+             }
+
+        .nav-header {
+          height: 110px;
+          display: flex;
+          padding:15px;
+        }
+/*
+        .box {
+          display:flex;
+          width: 80%;
+          margin:auto;
+          justify-content: center;
+          align-items: stretch;
+          flex-direction: row-reverse;
+        }*/
+
+/*        .card {
+          width: 90%;
+          padding: 20px;
+          text-align: left
+        }
+*/
+        .h2 {
+            line-height: 3em;
+            }
+        .intro {
+          font-size: 1.25em;
+/*          line-height: 1.5em;
+*/          width: 50%;
+          margin: auto;
+          padding: 100px;
+        }
+        .content {
+				/*max-width: 820px;*/
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				margin: auto;
+				padding: 60px;
+				padding-top: 0px;
+				align-items: flex-start;
+			}
+
+		.col-third {
+			line-height: 20px;
+			padding: 60px;
+			width: 60%;
+			}
+
+    </style>
+
+	<body>
+		<!-- <div class="nav-header">
+			<img class="logo" src="imgs/liplogo.png" alt="blacklipslogo">
+			<div class="navbar">
+				<ul class="nav-bar">
+					<li><a class= "nav-bar-link"href="index.html">Home</a></li>
+					<li><a class= "nav-bar-link" href="crueltyfree.html">Cruelty Free Makeup</a></li>			
+					<li><a class= "nav-bar-link" href="donate.html">Donate</a></li>
+				</ul>
+			</div>
+		</div> -->
+		<!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-amber w3-card w3-text-dark-gray w3-xlarge">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myHideShow()"><i class="fa fa-bars"></i></a>
+            <a href="index.html" class=" w3-bar-item w3-button w3-padding-large">Home</a>
+            <a href="makeupapplication.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Makeup Application</a>
+            <a href="makeuptools.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Makeup Tools</a>
+            <a href="funwithmakeup.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Fun With Makeup</a>
+            <a href="skincare.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Skincare</a>
+            <a href="crueltyfree.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Cruelty Free</a>
+            <div class="w3-dropdown-hover w3-hide-small">
+                <button class= "w3-padding-large w3-button" title="Click Me">Donate <i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-amber w3-text-dark-gray">
+                    <a href="donate.html" class="w3-bar-item w3-button">How to Donate</a>
+                    <a href="donate.html" class="w3-bar-item w3-button">Where to Donate</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Small NavBar -->
+    <div id="navDemo" class="w3-bar-block w3-amber w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+        <!-- <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a> -->
+        <a href="makeupapplication.html" class="w3-bar-item w3-button w3-padding-large w3-text-dark-gray">Makeup Application</a>
+        <a href="makeuptools.html" class="w3-bar-item w3-button w3-padding-large w3-text-dark-gray">Makeup Tools</a>
+        <a href="funwithmakeup.html" class="w3-bar-item w3-button w3-padding-large w3-text-dark-gray">Fun With Makeup</a>
+        <a href="skincare.html" class="w3-bar-item w3-button w3-padding-large w3-text-dark-gray">Skincare</a>
+        <a href="crueltyfree.html" class="w3-bar-item w3-button w3-padding-large w3-text-dark-gray">Cruelty Free</a>
+        <a href="donate.html" class="w3-bar-item w3-button w3-padding-large w3-text-dark-gray">Donate</a>
+    </div>
+
+    <!-- Header Image -->
+    	<div class="w3-content" style="max-width:2000px; margin-top:46px">
+    		<!-- Image 1 -->
+    		<div class="mySlides w3-display-container w3-center w3-sepia-min">
+    			<img src="imgs/makeupapp.jpg" alt="makeup application" style="width:100%">
+    		</div>
+    	</div>
+
+    	<!-- Content -->
+    	<div class="intro">
+			<h2 class="w3-wide w3-jumbo w3-text-black">Makeup Application</h2>
+				<br>
+				<p class= "w3-justify w3-center w3-large w3-text-black">Proper makeup application can be very tricky, and can be hard for beginners, as well as people more experienced with makeup. This page will break down the essentials regarding makeup application of things like foundation, lipstick, and eyeshadow.</p>
+				<br>
+		</div>
+
+		<div class="content">
+			<div class="col-third">
+				<!-- <img src="#" alt=""> -->
+				<h3>Foundation</h3>
+					<p>Foundation is one of the hardest makeup products to apply, and can be tricky for any skin type. Different application methods include...</p>
+       					<!-- <ul> -->
+           					<p>Makeup brushes</p>
+            				<p>Fingers</p>
+            				<p>Makeup sponges</p>
+            				<p>Silicone makeup applicators</p>
+        				<!-- </ul> -->
+			</div>
+			<div class="col-third">
+				<!-- <img src="#" alt=""> -->
+				<h3>Eyeshadow</h3>
+					<p>Dependent on the type of eyeshadow, and where you want to place the product, there are a few ways to apply eyeshadow. These application methods include...</p>
+        				<!-- <ul> -->
+            				<p>Eyeshadow brushes: <br>Fluffy brushes can be used to blend shadows, and flat brushes can be used to deposit more product.</p>
+            				<p>Sponge applicators: <br>Although these get a bad rep, these can actually work very well. These can work well in order to deposit eyeshadow on the eyelid, and alloe for an amazing color pay off.</p>
+           					<p>Fingers: <br>This method really works best for cream shadows, as well as shimmery or glittery shadows that you want to look very intense. Using a brush for products like these often makes them look dull and washed out.</p>
+        				<!-- </ul> -->
+				</div>
+			<div class="col-third">
+				<h3>Lipstick </h3>
+            		<p>
+                		Lipstick can also be tricky to get the hang of. There are many different types of lip products, just some of them include tube lipsticks in different finishes, as well as liquid lipsticks that dry down matte. Using a small lip brush to apply and clean the edges of the application will really help the lipstick to look nice and clean. Applying regular tube lipstick with a lip brush will also increase the longevity of the wear.
+                	</p>
+            </div>
+			
+		</div>
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myHideShow() {
+          var x = document.getElementById("navDemo");
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else {
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+    </script>
+   </body>
+   </html>

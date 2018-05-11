@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<title>Donate</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+		<link rel="icon" href="imgs/favicon.ico">
+
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			
+			body { 
+				font-family: "Dosis", san-serif;
+				box-sizing: border-box;
+				background: linear-gradient(to bottom, #990033 0%, #000000 103%);
+       		 	color: white;
+        		font-family: sans-serif;
+        		margin: auto;
+        		text-align: center;
+        		font-size: 1.25em
+			}
+
+			.nav-header {
+           		height: 110px;
+            	display: flex;
+            	padding:15px;
+        	}
+
+
+/*			.splash {
+				height: 250px;
+				background-image: url("imgs/makeupheader.jpg");
+				background-repeat: repeat;
+				margin-top: -30px;
+				padding: 10px;
+			}*/
+
+			.intro {
+				color:black;
+			}
+
+/*			.intro-title {
+				text-align: center;
+				font-size: 50px;
+			}*/
+
+			.about {
+				width: 60%;
+				text-align: center;
+				margin: auto;
+			}
+			
+			.content {
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				margin: auto;
+				padding: 60px;
+				padding-top: 0px;
+				text-align: left;
+			}
+
+			.col-third {
+				line-height: 20px;
+				padding: 60px;
+				width: 60%;
+			}
+			
+			p {
+				text-align: justify;
+			}
+
+		/*	.donatelink {
+				color: maroon;
+			}*/
+
+	
+
+			.donations {
+				display:block;
+				position: relative;
+				margin:auto;
+				width: 70%;
+				padding:30px;
+			}
+
+			.overlay {
+				position: absolute;
+  				bottom: 100%;
+  				left: 0;
+  				right: 0;
+  				background-color: black;
+  				overflow: hidden;
+  				width: 100%;
+  				height:0;
+  				transition: .5s ease;
+			}
+
+			.donations:hover .overlay {
+  				bottom: 0;
+  				height: 100%;
+			}
+
+			.text {
+	  			text-align:center;
+  				color: white;
+  				font-size: 20px;
+  				position: absolute;
+  				overflow: hidden;
+  				top: 50%;
+  				left: 50%;
+  				transform: translate(-50%, -50%);
+  				-ms-transform: translate(-50%, -50%);
+			}
+
+			h1 {
+				font-family: "Dancing Script";
+			}
+			
+		</style>
+	</head>
+
+	<body>
+		<!-- <div class="nav-header">
+			<img class="logo" src="imgs/liplogo.png" alt="blacklipslogo">
+			<div class="navbar">
+				<ul class="nav-bar">
+					<li><a class= "nav-bar-link" href="index.html">Home</a></li>
+					<li><a class= "nav-bar-link" href="funwithmakeup.html">Fun With Makeup</a></li>	
+					<li><a class= "nav-bar-link" href="makeupapplication.html">Makeup Application</a></li>
+					<li><a class= "nav-bar-link" href="makeuptools">Makeup Tools</a></li>
+					<li><a class= "nav-bar-link" href="donate.html">Donate</a></li>
+				</ul>
+			</div>
+		</div> -->
+		<!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-amber w3-card w3-text-dark-gray w3-xlarge">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myHideShow()"><i class="fa fa-bars"></i></a>
+            <a href="index.html" class=" w3-bar-item w3-button w3-padding-large">Home</a>
+            <a href="makeupapplication.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Makeup Application</a>
+            <a href="makeuptools.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Makeup Tools</a>
+            <a href="funwithmakeup.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Fun With Makeup</a>
+            <a href="skincare.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Skincare</a>
+            <a href="crueltyfree.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Cruelty Free</a>
+            <div class="w3-dropdown-hover w3-hide-small">
+                <button class= "w3-padding-large w3-button" title="Click Me">Donate <i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-amber w3-text-dark-gray">
+                    <a href="donate.html" class="w3-bar-item w3-button">How to Donate</a>
+                    <a href="donate.html" class="w3-bar-item w3-button">Where to Donate</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Small NavBar -->
+    <div id="navDemo" class="w3-bar-block w3-amber w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+        <!-- <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a> -->
+        <a href="makeupapplication.html" class="w3-bar-item w3-button w3-padding-large w3-text-dark-gray">Makeup Application</a>
+        <a href="makeuptools.html" class="w3-bar-item w3-button w3-padding-large w3-text-dark-gray">Makeup Tools</a>
+        <a href="funwithmakeup.html" class="w3-bar-item w3-button w3-padding-large w3-text-dark-gray">Fun With Makeup</a>
+        <a href="skincare.html" class="w3-bar-item w3-button w3-padding-large w3-text-dark-gray">Skincare</a>
+        <a href="crueltyfree.html" class="w3-bar-item w3-button w3-padding-large w3-text-dark-gray">Cruelty Free</a>
+        <a href="donate.html" class="w3-bar-item w3-button w3-padding-large w3-text-dark-gray">Donate</a>
+    </div>
+
+	    <!-- Header Image -->
+    	<div class="w3-content" style="max-width:2000px; margin-top:46px">
+    		<!-- Image 1 -->
+    		<div class="mySlides w3-display-container w3-center w3-sepia-min">
+    			<img src="imgs/marblebackground.jpg" alt="makeup application" style="width:100%">
+    		</div>
+    	</div>
+
+    	<div class="splash"></div>
+
+		<div class="intro">
+			<h1 class="w3-wide w3-jumbo w3-text-black">Donating</h1>
+				<p class= "about"> A great thing about makeup is the confidence it can give someone. Donating lightly used or new makeup to women in tough situations can be incredibly beneficial to their self esteem, and can make them feel special despite their current hardships. Many people tend to have makeup products they just don't end up using for whatever reason. Unfortunately, these items often sit unused and eventually get thrown out. Through donating these products, it's a great way to declutter, and of course to give to someone who maybe can't afford that lipstick.</p>
+		</div>
+		<div class="donations">
+			<img class= "donations" src= "imgs/donations.jpg" alt= "donations">
+			<div class="overlay">
+				<div class="text"> These are just some of many donations received at Project Beauty Share.</div>
+			</div>
+		</div>
+
+		<div class="content">
+			<div class="col-third">
+				<!-- <img src="#" alt=""> -->
+				<h3>What can I donate?</h3>
+					<p>Some items you can donate are...</p>
+       					<ul>
+           					<li>New and lightly used makeup</li>
+            				<li>Skincare items</li>
+            				<li>Makeup bags</li>
+            				<li>Haircare products</li>
+            				<li>Feminine hygeine products</li>
+        				</ul>
+			</div>
+			<div class="col-third">
+				<h3>Who Can Help? </h3>
+            		<p>
+                		One of the best parts about these organizations is that it only takes one person to make a difference. Even if one person donates one lipstick, this is going to go to a woman who may really need that confidence boost while going through some hardships. In addition the the average person, there are some beauty influensers on YouTube who occasionaly pair up with organizations in order to help them raise money. One YouTuber well known for helping out one of these organizations is someone who goes by the name "Thataylaa" on YouTube. </p>
+            </div>
+			<div class="col-third">
+				<!-- <img src="#" alt=""> -->
+				<h3>Where can I donate?</h3>
+					<p>Some great places to donate are...</p>
+        				<ul>
+            				<li><a class= "donatelink" href="http://www.projectbeautyshare.org/">Project Beauty Share</a></li>
+            				<li><a class= "donatelink" href="https://newhorizonsnh.org/donate/">Your local shelters</a></li>
+           					<li><a class= "donatelink" href="http://www.beautybus.org/">Beauty Bus</a></li>
+            				<li><a class="donatelink" href="https://dressforsuccess.org/">Dress for Success</a></li>
+        				</ul>
+		</div>
+		</div>
+	</body>
+
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myHideShow() {
+          var x = document.getElementById("navDemo");
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else {
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+    </script>
+</html>

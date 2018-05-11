@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Index</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    <link rel="icon" href="imgs/favicon.ico">
+
+    <style>
+        body {
+          font-family: "Dosis", san-serif;
+          background: linear-gradient(to bottom, #990033 0%, #000000 103%);
+          color:white;
+          font-size: 1.25em;
+            }
+      * {
+        box-sizing: border-box;
+        font-family: sans-serif;
+        margin: auto;
+        text-align: center;
+      }
+
+
+      /*Following was for original navbar*/
+
+/*        .nav-header {
+          background-image: url("imgs/marble.jpg");
+          height: 110px;
+          display: flex;
+          padding:15px;
+        }*/
+
+/*        .logo {
+          width: 100px;
+          height: 60px;
+          float:left;
+          margin-left: 23px;
+        }*/
+/*
+        .nav-bar {
+          list-style-type: none;
+          display: flex;
+        }
+
+        .nav-bar-link {
+          color: black;
+          font-size: 24px;
+          padding: 20px;
+          margin: 30px; 
+          text-decoration: none;
+        }
+
+        .navbar a:hover {
+          color: maroon;
+        }*/
+
+        .box {
+          display:flex;
+          width: 80%;
+          margin:auto;
+      
+        }
+
+        .card {
+          width: 90%;
+          padding: 20px;
+        }
+
+
+        .main-header {
+          padding-top: 200px;
+          height: 850px;
+          background: url("imgs/index.jpg") no-repeat center;
+          background-size: cover;
+          -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+          -moz-animation: fadein 2s; /* Firefox < 16 */
+          -ms-animation: fadein 2s; /* Internet Explorer */
+          -o-animation: fadein 2s; /* Opera < 12.1 */
+          animation: fadein 2s;
+        }
+
+        @keyframes fadein {
+          from { opacity: 0; }
+          to   { opacity: 1; }
+        }
+
+        /* Firefox < 16 */
+        @-moz-keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        /* Safari, Chrome and Opera > 12.1 */
+        @-webkit-keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        /* Internet Explorer */
+        @-ms-keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        /* Opera < 12.1 */
+        @-o-keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        .main-header-title {
+          font-size: 80px;
+          color: goldenrod;
+          text-transform: uppercase;
+          background: -webkit-linear-gradient(top, goldenrod, #000);
+          background: linear-gradient(top, goldenrod, #000);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        .intro {
+          font-size: 1.25em;
+          line-height: 1.5em;
+          width: 50%;
+          margin: auto;
+          padding: 40px;
+          color:black;
+        }
+
+/*        .bottomborder {
+          width: 100%;
+        }*/
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Old navbar -->
+    <!-- <div class="nav-header">
+      <img class="logo" src="imgs/liplogo.png" alt="blacklipslogo">
+      <div class="navbar">
+        <ul class="nav-bar">
+          <li><a class= "nav-bar-link"href="index.html">Home</a></li>
+          <li><a class= "nav-bar-link" href="crueltyfree.html">Cruelty Free Makeup</a></li>     
+          <li><a class= "nav-bar-link" href="donate.html">Donate</a></li>
+        </ul>
+      </div>
+    </div> -->
+
+    <!-- Navbar -->
+    <div class="w3-top">
+           <div class="w3-bar w3-amber w3-card w3-text-dark-gray w3-xlarge">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myHideShow()"><i class="fa fa-bars"></i></a>
+            <a href="index.html" class=" w3-bar-item w3-button w3-padding-large">Home</a>
+            <a href="makeupapplication.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Makeup Application</a>
+            <a href="makeuptools.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Makeup Tools</a>
+            <a href="funwithmakeup.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Fun With Makeup</a>
+            <a href="skincare.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Skincare</a>
+            <a href="crueltyfree.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Cruelty Free</a>
+            <div class="w3-dropdown-hover w3-hide-small">
+                <button class= "w3-padding-large w3-button" title="Click Me">Donate <i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-amber w3-text-dark-gray">
+                    <a href="donate.html" class="w3-bar-item w3-button">How to Donate</a>
+                    <a href="donate.html" class="w3-bar-item w3-button">Where to Donate</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Small NavBar -->
+    <div id="navDemo" class="w3-bar-block w3-amber w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+        <!-- <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a> -->
+        <a href="makeupapplication.html" class="w3-bar-item w3-button w3-padding-large w3-text-dark-gray">Makeup Application</a>
+        <a href="makeuptools.html" class="w3-bar-item w3-button w3-padding-large w3-text-dark-gray">Makeup Tools</a>
+        <a href="funwithmakeup.html" class="w3-bar-item w3-button w3-padding-large w3-text-dark-gray">Fun With Makeup</a>
+        <a href="skincare.html" class="w3-bar-item w3-button w3-padding-large w3-text-dark-gray">Skincare</a>
+        <a href="crueltyfree.html" class="w3-bar-item w3-button w3-padding-large w3-text-dark-gray">Cruelty Free</a>
+        <a href="donate.html" class="w3-bar-item w3-button w3-padding-large w3-text-dark-gray">Donate</a>
+    </div>
+
+    <div class="main-header">
+      <h1 class="main-header-title" >The Encyclopedia <br> of </h1>
+      <h1 class="main-header-title"> Makeup </h1>
+    </div>
+
+    <p class="intro">
+        There is so much to know about makeup. From your skincare regimen, to the brushes you use, this is all going to affect your makeup and the way it looks.
+    </p>
+
+    <div class="box">
+
+        <div class="card">
+            <!-- <img src="#" alt="#S"> -->
+            <h3>What's the goal of this website?</h3>
+            <p>
+                The goal of this site is to simply provide knowledge to both beginners, as well as people more familiar with makeup. This site is designed to be somewhat of an encyclopedia for everything makeup related. This website features information regarding makeup application, as well as everything from how to choose a skincare regime, to how to donate to women in need. <a class= "PBS-link" href="http://www.projectbeautyshare.org/">Click here</a> to learn more about Project Beauty Share, a great donation center.
+            </p>
+        </div>
+
+        <div class="card">
+            <!-- <img src="#" alt="#"> -->
+            <h3>What can I find on this website?</h3>
+            <p>
+                Topics you can learn about on this website include information about...
+            </p>
+            <!-- <ul class=list> -->
+              <p> Skincare </p>
+              <p> Makeup Brushes and Tools </p>
+              <p> Makeup Products </p>
+              <p> Makeup Application </p>
+              <p> How to Donate to Women in Need </p>
+              <p> Coming Soon: Cruelty Free Makeup </p>
+           <!-- </ul> -->
+        </div>
+
+        <div class= "card">
+          <h3> The True Beauty of Makeup </h3>
+            <p>
+              The true beauty of makeup is in the confidence it can give some people. Those with certain skin conditions such as rosacea and cystic acne can use makeup to cover their imperfections. This allows them to feel as though this allows for people to see just them, and not their skin condition. Many also see makeup as an art form, and love to express themselves through more avant garde looks, some of which are featured under the "Fun With Makeup" tab.</p>
+        </div>
+      </div>
+
+      <br>
+      <img class= "lipstick" src="imgs/lipstick.png" alt="black lipstick">
+      <br>
+
+      <div class= "music">
+      <audio controls autoplay>
+        <source src="media/indexmusic.mp3" type="audio/mp3">
+      </audio>
+    </div>
+<!--       <br>
+      <img class= "bottomborder" src= "imgs/glitterborder.png" alt="lipstick border"> -->
+</body>
+
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myHideShow() {
+          var x = document.getElementById("navDemo");
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else {
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+    </script>
+</html>
